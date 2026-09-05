@@ -61,6 +61,7 @@ app/
   index.php             # sample page: extension list + SQLite visit counter
   phpinfo.php           # classic phpinfo()
   healthz.php           # JSON health check
+screenshots/            # for this README
 ```
 
 ## Pulling the pre-built image
@@ -96,8 +97,14 @@ curl http://localhost:8080/            # visit counter, increments each call
 curl http://localhost:8080/healthz.php # JSON: php version, sapi, loaded extensions
 ```
 
-Open http://localhost:8080/phpinfo.php in a browser for the full `phpinfo()`
-output.
+Open http://localhost:8080/ in a browser to see the visit counter and the
+full list of loaded extensions:
+
+![Index page](screenshots/index-page.jpg)
+
+And http://localhost:8080/phpinfo.php for the full `phpinfo()` output:
+
+![phpinfo() output](screenshots/phpinfo.jpg)
 
 ### Mounting your own app instead
 
